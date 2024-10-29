@@ -13,10 +13,12 @@ const TextToggleButton: React.FC = () =>{
 
     return(
         <div>
-        <h1>Cambia de texto con redux</h1>
+        <h1 className="text-center">Cambia de texto con redux</h1>
         <div className="d-flex justify-content-center">
-            <div className="card p-5 col-5 text-center">
-                <button className="btn btn-primary"onClick={handleClick}>{text}</button>
+            <div className="card p-5 col-5 text-center" style={{
+                background: 'transparent',
+            }}>
+                <button className="btn btn-primary btn-lg"onClick={handleClick}>{text}</button>
             </div>
         </div>            
         </div>
