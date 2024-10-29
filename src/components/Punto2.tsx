@@ -15,14 +15,19 @@ const Counter: React.FC = () => {
 
     return (
         <div className="d-flex justify-content-center">
-            <div className="card p-5 col-5 text-center">
-                <h1>Contador: {count}</h1>
+            <div className="card p-5 col-5 text-center" style={{
+                background: '#00000094',
+                border: ' 1px solid gray',
+                borderRadius: '38px',
+                color: 'white',
+            }}>
+                <h1>Contador(useState): {count}</h1>
                 <div className="d-flex justify-content-center">
-                 <button className="btn btn-primary w-25 m-2" onClick={handleIncrement}> Aumentar </button>
-                 <button className="btn btn-primary w-25 m-2" onClick={() => setCount(0)}>Reiniciar</button>                   
+                    <button className="btn btn-primary w-25 m-2" onClick={handleIncrement}> Aumentar </button>
+                    <button className="btn btn-primary w-25 m-2" onClick={() => setCount(0)}>Reiniciar</button>
                 </div>
 
-            </div>           
+            </div>
         </div>
 
     );

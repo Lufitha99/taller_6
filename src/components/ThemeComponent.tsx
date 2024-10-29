@@ -12,11 +12,13 @@ const ThemeComponent: React.FC = () => {
     const { theme, toggleTheme } = context;
 
     const styles: CSSProperties = {
-        background: theme === "Claro" ? "#fff" : "#333",
-        color: theme === "Claro" ? "#333" : "#fff",
+        background: theme === "Claro" ? "#fff" : "#fff",
+        color: theme === "Claro" ? "#333" : "#333",
         padding: "20px",
         textAlign: "center",
+        borderRadius: "24px",
         border: "1px solid gray",
+        filter: theme === "Claro" ? "invert(0)" : "invert(1)",
     };
 
     return (
